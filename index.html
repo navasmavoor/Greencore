@@ -1,0 +1,95 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>GreenCore Contracting</title>
+
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="title" content="GreenCore Contracting">
+<meta name="description" content="We are one of leading architects, interior designs and construction company in calicut and we are experts in new and renovation work across kerala.">
+<meta name="keywords" content="greencore contracting, architects, interior designs, construction company in calicut,  renovation, architects in mavoor, interior designsin mavoor, greencore contracying mavoor">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+</head>
+
+<body>
+	<!-- coming soon -->
+	<section class="w3l-coming-soon-block">
+		<div class="coming-section">
+			<div class="logo">
+				<a class="brand-logo" href="index.html">GreenCore Contracting</a>
+			</div>
+			<div class="wrapper">
+				<main class="content">
+					<div class="right">
+						<h1>We Are Coming Very soon!</h1>
+						<div class="subscribe-form">
+							<h4 class="update">Keep Updated</h4>
+							<form action="#" method="GET">
+								<input id="form-email" name="form-email" type="email" placeholder="Your email address.." />
+								<button type="submit" class="btn theme-submit-button">Submit</button>
+							</form>
+							<p class="subscribe">Enter your email address and we'll let you know as soon as it's ready</p>
+						</div>
+					</div>
+
+				</main>
+			</div>
+
+
+			<!-- copyright -->
+			<div class="copy-right">
+				<p>&copy; 2020 GreenCore Contracting. All rights reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3Layouts</a></p>
+			</div>
+			<!-- //copyright -->
+			<script>
+				(() => {
+					// Specify the deadline date
+					const deadlineDate = new Date('November 28, 2021 23:59:59').getTime();
+
+					// Cache all countdown boxes into consts
+					const countdownDays = document.querySelector('.countdown__days .number');
+					const countdownHours = document.querySelector('.countdown__hours .number');
+					const countdownMinutes = document.querySelector('.countdown__minutes .number');
+					const countdownSeconds = document.querySelector('.countdown__seconds .number');
+
+					// Update the count down every 1 second (1000 milliseconds)
+					setInterval(() => {
+						// Get current date and time
+						const currentDate = new Date().getTime();
+
+						// Calculate the distance between current date and time and the deadline date and time
+						const distance = deadlineDate - currentDate;
+
+						// Calculations the data for remaining days, hours, minutes and seconds
+						const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+						// Insert the result data into individual countdown boxes
+						countdownDays.innerHTML = days;
+						countdownHours.innerHTML = hours;
+						countdownMinutes.innerHTML = minutes;
+						countdownSeconds.innerHTML = seconds;
+					}, 1000);
+				})();
+			</script>
+		</div>
+	</section>
+
+	<!-- coming soon -->
+</body>
+
+</html>
